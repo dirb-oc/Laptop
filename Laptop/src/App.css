@@ -1,42 +1,204 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Portada */
+.Portada {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    margin: 5% 10%;
+}
+
+.Portada img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.Titulo{
+    font-size: 65px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.Descripcion{
+    font-size: 20px;
+    color: #555;
+}
+
+.Intel, .Nvidea{
+    color: white;
+    border-radius: 5px;
+    padding: 7px 20px;
+    margin-right: 15px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.Intel{
+    background-color: #0071c5;
+}
+
+.Nvidea{
+    background-color: #76B900;
+}
+
+/* Componentes */
+.Componentes {
+  background-color: #fbfbfb;
+  border-top: 1px solid #d5d8da;
+  border-bottom: 1px solid #d5d8da;
+  width: 100%; /* ocupa todo el ancho */
+  display: flex;
+  justify-content: center;
+}
+
+.Componentes-contenido {
+  width: 80%; /* 10% de margen a cada lado */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* permite bajar si no hay espacio */
+  gap: 3rem;
   text-align: center;
+  padding: 1.5rem 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.Componentes-contenido div {
+  flex: 1 1 120px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  min-width: 80px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Componentes div h1{
+    margin-bottom: -10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.Componentes div p{
+    margin-top: 10px;
+    font-size: 16px;
+    color: gray;
 }
 
-.card {
-  padding: 2em;
+.Titulo_Principal {
+    text-align: center;
+    margin: 50px 0;
+    margin-bottom: 55px;
 }
 
-.read-the-docs {
-  color: #888;
+.Titulo_Principal h1 {
+    font-size: 35px;
+    margin-bottom: 0.5rem;
+}
+
+.Titulo_Principal p {
+    color: #555;
+    font-size: 19px;
+}
+
+.Tarjetas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 0px 10%;
+    margin-bottom: 50px;
+}
+
+.Tarjeta{
+    background: #fbfbfb;
+    border: 1px solid #d5d8da;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    padding-bottom: 1rem;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    border-radius: 0.75rem;
+    gap: 10px;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: #e2e8f0;
+    border-radius: 0.75rem;
+    font-size: 1.8rem;
+}
+
+.Tarjeta h1{
+    margin-top: -10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.Tarjeta h2{
+    font-size: 16px;
+    font-weight: 400;
+    color: #4b5563;
+}
+
+.Tarjeta p{
+    color: #4b5563;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.Tarjeta a{
+    font-weight: 600;
+    color: black
+}
+
+.separator {
+  height: 1px;
+  background-color: #d5d8da;
+  margin: 20px 0 10px 0;
+}
+
+.Tecnologias p{
+    font-weight: 600;
+    color: black;
+}
+
+.Tecnologias a{
+    font-size: 12px;
+    margin-right: 10px;
+    border: 1px solid #d5d8da;
+    border-radius: 10px;
+    padding: 2px 10px;
+}
+
+.Benchmarks{
+    background-color: #fbfbfb;
+    border-top: 1px solid #d5d8da;
+    border-bottom: 1px solid #d5d8da;
+}
+
+.BenchCards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 0px 10%;
+    margin-bottom: 50px;
+}
+
+.BenchCard{
+    background: white;
+    border: 1px solid #d5d8da;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    padding-bottom: 1rem;
 }
